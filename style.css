@@ -1,0 +1,94 @@
+:root {
+    --bg-main: #f4f4f5;
+    --text-main: #18181b;
+    --brand-accent: #f97316;
+    --card-surface: #ffffff;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+}
+
+nav {
+    background-color: #18181b;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--brand-accent);
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--brand-accent);
+    text-transform: uppercase;
+}
+
+main {
+    padding: 3rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.product-card {
+    background: var(--card-surface);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--brand-accent);
+    margin: 1rem 0;
+}
+
+button {
+    background-color: var(--text-main);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: var(--brand-accent);
+}
